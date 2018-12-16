@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png" >
+<title>INCUBATE IND - Hack | Code | Connect</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85685250-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-85685250-1');
+</script>
+</head>
+
+<body>
+<div class="main_container"> 
+  <!--Header top-->
+  <header class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-3 col-xs-6">
+		  <div class="mob_menu"><a href="#"><img src="svg_icon/menu.svg" alt="" title=""/></a></div>
+          <div class="logo"><a href="index.html"><img src="svg_icon/logo.svg" alt="logo" title=""/><a style="color:#000; font-size:40px; font-weight:bold; padding-top: 50px;">AMBASSADORS</a></div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-9">
+          <nav class="nav">
+            <ul class="clearfix">
+              <li><a  onclick="openForm()">Chat</a>
+                 <div class="chat-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <h1>Chat</h1>
+
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                 </div>
+                </li>
+              <li><a>Account<span class="fa fa-caret-down"></span></a>
+                <ul>
+                  <li><a>Activity</a></li>
+                  <li><a>My Hackathons</a></li>
+                  <li><a>My Achievements</a></li>
+                  <li><a>Projects</a></li>
+                  <li><a>Trainings</a></li>
+                </ul>
+              </li>
+              <li><a>Notification</a></li>
+              <li><a>Calendar</a></li>
+            </ul>
+          </nav>
+          
+          <div class="login-container clearfix";><a onclick="document.getElementById('id01').style.display='block'" >
+            Login/Sign Up!
+          </a><div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+    </div>
+
+    <div class="container1">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+     
+    </div>
+  </form>
+</div>
+        </div> 
+      </div>
+    </div>
+  </header>
+  <!--Header top End--> 
+  <!--crassula-sec-->
+  <div class="crassula-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="custom_box owl-carousel_2">
+          
+          
+            <li><a href="https://incubateind.com/mshack/" target="_blank">
+              <div class="logo_box"><img src="images/mshack.jpg" alt="" title=""/></div>
+              <div class="logo_title">
+                <h3>MSHACK</h3>
+              <p>Hack on 15th-16th December 2018</p>
+              </div>
+              <div class="clearfix"></div>
+              </a>
+            </li>
+            <li><a href="https://incubateind.com/neoteric/" target="_blank">
+              <div class="logo_box"><img src="images/Instagram.jpg" alt="" title=""/></div>
+              <div class="logo_title">
+                <h3>Neoteric</h3>
+              <p>Last date to Nominate: 20th December 2018</p>
+              </div>
+              <div class="clearfix"></div>
+              </a>
+            </li>
+            <li><a href="http://bit.ly/incubateind_innovateToINSPIRE_symposium" target="_blank">
+              <div class="logo_box"><img src="images/logo_4.png" alt="" title=""/></div>
+              <div class="logo_title">
+                <h3>#InnovateToINSPIRE Symposium</h3>
+              <p>Event on: 11th-13th November 2018</p>
+              </div>
+              <div class="clearfix"></div>
+              </a>
+            </li>
+            <li><a href="http://incubateind.com/rtu" target="_blank">
+              <div class="logo_box"><img src="images/logo_2.png" alt="" title=""/></div>
+              <div class="logo_title">
+                <h3>RTU Hackathon</h3>
+              <p>Ended on: 23rd September 2018</p>
+              </div>
+              <div class="clearfix"></div>
+              </a>
+            </li>
+            <li><a href="http://incubateind.com/ideathon" target="_blank">
+              <div class="logo_box"><img src="images/logo_1.png" alt="" title=""/></div>
+              <div class="logo_title">
+                <h3>MMA Ideathon</h3>
+              <p>Ended on: 26th August 2018</p>
+              </div>
+              <div class="clearfix"></div>
+              </a>
+            </li>
+            <li>
+            <a href="http://bit.ly/siahack" target="_blank">
+              <div class="logo_box"><img src="images/logo_3.png" alt="" title=""/></div>
+              <div class="logo_title">
+                <h3>Singapore Airlines AppChallenge 2018</h3>
+              <p>Ended on: 30th September 2018</p>
+              </div>
+              <div class="clearfix"></div>
+              </a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--crassula-sec End--> 
+  <!--Events-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="events-sec">
+          <h1 class="heding-first">Upcoming Initiatives</h1>
+		  <ul class="clearfix carousel" id="owl-demo4">
+      
+      <li>
+        <figure class="event-img"><img src="images/mshack1.jpg" alt="" title=""/></figure>
+        <h1 class="heding-first align-left">MSHACK</h1>
+        <img src="images/ms-logo.jpg" alt="" style="width:250px;" title=""/>
+        <p>Microsoft presents MSHACK, an initiative of IncubateIND, powered by Microsoft Azure.
+        <br>This Hackathon will bring together developers, designers, subject-matter experts, and other interested people who are creating innovative solutions to new and old problems. IncubateIND provides the perfect ground to network & teamwork for tech driven entrepreneurs & students. Together Microsoft Azure & IncubateIND’s aim is to launch a platform that would give brands innovative solutions by young techpreneurs who would in turn be fostered & well-guided.
+        <br>Hack on 15th-16 December 2018: <b>30th September 2018</b>
+       
+        </p>
+        <a href="http://incubateind.com/mshack" target="_blank" class="register-now">Register Now</a> 
+      </li>
+      
+      <li>
+        <figure class="event-img"><img src="images/Instagram.jpg" alt="" title=""/></figure>
+        
+        <h1 class="heding-first align-left">Neoteric</h1>
+        <img src="images/neoteric-logo.png" alt="" style="width:250px;" title=""/>
+        <p>IncubateIND Neoteric in its first year plans to recognize exemplary startup entrepreneurs who are out there to make the world a better place and are contributing to India's growth story across the globe. 
+        <br>Laste date to nominate: <b>20th December 2018</b>
+        </p>
+        <a href="http://incubateind.com/neoteric" target="_blank" class="register-now">Nominate Now</a> 
+      </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Events End--> 
+  <!--Featured-->
+  <div class="compete_job">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="featured">
+            <h1 class="heding-first">Featured Hackathon</h1>
+            <ul>
+              <li>
+                <figure><img src="images/featured2.jpg" alt="" title=""/></figure>
+                <div class="title-wrap"> <img src="images/featured-logo2.png" alt="" title=""/>
+                  <p>The Vistara Hackathon brings India's Largest Aviation Hackatho..</p>
+                  <a href="https://incubateind.com/vistara/" target="_blank" class="view-more">Register Now <i class="fas fa-arrow-right"></i></a> </div>
+              </li>
+              <li>
+                <figure><img src="images/featured4.jpg" alt="" title=""/></figure>
+                <div class="title-wrap"> <img src="images/logo3.png" alt="" title=""/>
+                  <p>Dish-a-thon is India's first and largest Media and Entertai...</p>
+                  <a href="https://incubateind.com/dishathon/" target="_blank" class="view-more">Register Now <i class="fas fa-arrow-right"></i></a> </div>
+              </li>
+              <li>
+                <figure><img src="images/featured1.jpg" alt="" title=""/></figure>
+                <div class="title-wrap"> <img src="images/featured-logo3.png" alt="" title=""/>
+                  <p>The aim is to discover insights and develop new solutions...</p>
+                  <a href="https://www.incubateind.com/ev-hackathon/" target="_blank" class="view-more">Register Now <i class="fas fa-arrow-right"></i></a> </div>
+              </li>
+              <li>
+                <figure><img src="images/featured3.jpg" alt="" title=""/></figure>
+                <div class="title-wrap"> <img src="images/featured-logo1.png" alt="" title=""/>
+                  <p>The Best Of Block Inc invites coders and blockchain enthu...</p>
+                  <a href="https://www.incubateind.com/blockchain/" target="_blank" class="view-more">Register Now <i class="fas fa-arrow-right"></i></a> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Featured end--> 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog"> 
+      
+      <!-- Modal content-->
+      <div class="modal-content">
+        <button type="button" class="btn-default close_btn" data-dismiss="modal">&times;</button>
+        <div class="model_boxleft">
+          <h2>Login</h2>
+          <p>Join this platform with</br>
+            one of the biggest Community.</p>
+          <img src="images/login_logo.png" alt="" title=""/> </div>
+        <div class="model_boxright">
+          <div class="tab-sec">
+            <ul class="tab-list2">
+              <li class="active"><a href="javascript:void(0)">Developers</a></li>
+              <li><a href="javascript:void(0)">Businesses</a></li>
+              <li><a href="javascript:void(0)">Campus</a></li>
+            </ul>
+            <div class="tab-data2">
+			  <form>
+				<div class="brise-input">
+				  <input type="text" name="text" required>
+				  <label>Email Id/ Phone Number</label>
+				</div>
+				<div class="brise-input">
+				  <input type="password" name="text" required>
+				  <label>Password</label>
+				</div>
+				<p><a href="#">Recover password</a> <span>Not Registered? <a href="#">Signup</a></span></p>
+				<button type="button">Get Started Today</button>
+				<i>Or</i>
+			  </form>
+           </div>
+		   <div class="tab-data2">
+			  <form>
+				<div class="brise-input">
+				  <input type="text" name="text" required>
+				  <label>Email Id/ Phone Number</label>
+				</div>
+				<div class="brise-input">
+				  <input type="password" name="text" required>
+				  <label>Password</label>
+				</div>
+				<p><a href="#">Recover password</a> <span>Not Registered? <a href="#">Signup</a></span></p>
+				<button type="button">Get Started Today</button>
+				<i>Or</i>
+			  </form>
+           </div>
+		   <div class="tab-data2">
+			  <form>
+				<div class="brise-input">
+				  <input type="text" name="text" required>
+				  <label>Email Id/ Phone Number</label>
+				</div>
+				<div class="brise-input">
+				  <input type="password" name="text" required>
+				  <label>Password</label>
+				</div>
+				<p><a href="#">Recover password</a> <span>Not Registered? <a href="#">Signup</a></span></p>
+				<button type="button">Get Started Today</button>
+				<i>Or</i>
+			  </form>
+           </div>
+            <div class="media-list">
+              <ul>
+                <li><a href="#"><img src="svg_icon/fb_box.svg" alt="" title=""/>Facebook</a></li>
+				<li><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=271955230467-7v9a7mq9j48oujngu6pt4eiu8ngi2nuo.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fincubateind.com%2Fgooglelogin%2Fg-callback.php&state&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=auto"><img src="svg_icon/google-plus.svg" alt="" title=""/>Google</a></li>
+				<li><a href="githublogin/login.php"><img src="svg_icon/github.svg" alt="" title=""/>Github</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script>
+$(document).ready(function() {
+//slider_1
+  $("#owl-demo1").owlCarousel({
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+	  autoPlay:true,
+      singleItem : true
+      });
+//slider_2
+  $("#owl-demo2").owlCarousel({
+		navigation : true,
+        autoPlay: 3000,
+        items :4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+//slider_3
+  $("#owl-demo3").owlCarousel({
+		navigation : true,  
+        autoPlay: 3000,
+        items :5,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+//slider_5
+  $("#owl-demo4").owlCarousel({
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+	  autoPlay:true,
+      singleItem : true
+      });
+//slider_5
+  $("#owl-demo5").owlCarousel({
+		navigation : true,  
+        autoPlay: 3000,
+        items :3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+//slider_6
+  $("#owl-demo6").owlCarousel({
+		navigation : true,  
+        autoPlay: 3000,
+        items :3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });	  
+//slider_7
+  $("#owl-demo7").owlCarousel({
+		navigation : true,  
+        autoPlay: 3000,
+        items :3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+/*======================Tab script================*/
+$('.tab-data').not(':first').hide();
+	$('.tab-list li').click(function(){
+		
+		if($('.tab-data:eq('+$(this).index()+')').is(':hidden')){
+			$('.tab-data').hide();
+			$('.tab-data:eq('+$(this).index()+')').show();
+			
+			// Active
+			$('.tab-list li').removeClass('active');
+			$(this).addClass('active');
+		}
+		return false;
+	});	
+//
+
+/*======================Tab script2================*/
+$('.tab-data2').not(':first').hide();
+	$('.tab-list2 li').click(function(){
+		
+		if($('.tab-data2:eq('+$(this).index()+')').is(':hidden')){
+			$('.tab-data2').hide();
+			$('.tab-data2:eq('+$(this).index()+')').show();
+			
+			// Active
+			$('.tab-list2 li').removeClass('active');
+			$(this).addClass('active');
+		}
+		return false;
+	});	
+//
+/*======================Tab script3================*/
+$('.testimonial-info_1').not(':first').hide();
+	$('.testimonial-tab li').click(function(){
+		
+		if($('.testimonial-info_1:eq('+$(this).index()+')').is(':hidden')){
+			$('.testimonial-info_1').hide();
+			$('.testimonial-info_1:eq('+$(this).index()+')').show();
+			
+			// Active
+			$('.testimonial-tab li').removeClass('active');
+			$(this).addClass('active');
+		}
+		return false;
+	});	
+//
+$('.mob_menu').click(function(){
+    $('.nav').slideToggle();
+    });
+    $(window).resize (function(){
+      $('.nav').removeAttr('style');
+    });
+	
+//custom Input
+$('.brise-uploaddd > label').find('input').change(function() {
+		var file = this.files;
+	$('.brise-uploaddd > label').text('Selected file: ' + file[0].name);
+})
+
+	  	  
+});
+</script>
+<script>
+$('.owl-carousel_2').owlCarousel({
+    stagePadding: 50,
+	autoPlay: 3000,
+    loop:true,
+    margin:10,
+	items:4,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+</html>

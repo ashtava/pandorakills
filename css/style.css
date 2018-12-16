@@ -1,0 +1,407 @@
+*{margin:0px; padding:0px; outline:0px;}
+h1, h2, h3, h4, h5, h6, p, ul, label{margin:0px; padding:0px; list-style:none;}
+a,a:hover{text-decoration: none;}
+a img{border: 0px;}
+img{max-width:100%; height:auto;}
+a:focus{outline:none; outline-offset:0px; text-decoration:none;}
+body{font-family:'Open Sans', sans-serif; font-size:15px; color:#333;}
+.logo{margin:15px 0px;}
+.logo img{width:136px;}
+.nav{margin:0px; float:left;}
+.nav ul li{list-style:none; float:left; position:relative; cursor:pointer;}
+.nav ul li a{color:#333;display:block;padding: 35px 30px; ;}
+.nav ul li:hover a{color:#5d24dd;}
+.login-container{float:right; right:10px; margin-top:28px; cursor:pointer;}
+.login-container a{color:#4b39ac; padding:6px 15px; border:1px solid #4b39ac; display:block; border-radius:5px;}
+.nav ul li a span{margin-left:5px;}
+.login-container a:hover{background:#4e20bb; color:#fff;}
+.nav ul li ul{position:absolute; left:30px; width:200px; display:none; top:40px; z-index:99; background:#fff; border:1px solid #f8f9fa;}
+.nav ul li:hover ul{display:block;}
+.nav ul li ul li{float:none;}
+.nav ul li ul li+li{border-top:1px solid #f8f9fa;}
+.nav ul li ul li a{padding:12px 15px; display:block; color:#333 !important;}
+.nav ul li ul li:hover a{color:#5d24dd !important; background:#f8f9fa;}
+.header-top{position:fixed; top:0; width:100%; z-index:9; background:#fff;}
+
+/*==================modal=====================*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: fit-content;
+  padding: 12px 20px;
+  margin: 8px 0;
+  line-break: auto;
+  break-after: always;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #5d24dd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: block;
+  border: none;
+  cursor: pointer;
+  width: min-content;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: min-content;
+  padding: 10px 18px;
+  display: block;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: min-content;
+  border-radius: 50%;
+}
+
+.container1 {
+  padding: 16px;
+  display: block;
+  width: min-content;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  display: block;
+  width: min-content;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: min-content; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: min-content;
+  }
+}
+
+
+/*=================chat======================*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 500px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #5d24dd;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/*==================crassula-sec================*/
+.crassula-sec{background:#e8f2f9; padding-top:20px; text-align:center;}
+.crassula-sec2{padding:22px 0px 0px 0px;}
+.crassula-sec2 h1{margin-bottom:35px;}
+.crassula-sec ul li{margin:0px 8px;height: 2px;}
+.crassula-sec ul li img{width:100%}
+
+.custom_box{margin:0px; padding-top:170px; text-align:left;}
+.custom_box li{background:#fff; padding:40px; margin:8px; border-radius:5px;}
+.logo_box{float:left; width:60px; margin-right:15px;}
+.logo_title{float:left; width:162px;}
+.logo_title a{color:#1b2d48;}
+.logo_title h3{color:#1b2d48; font-size:15px; margin-bottom:7px; font-weight:600; width:170px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.logo_title p{font-size:13px; margin:10px 0px;}
+.logo_title p a{color:#6b8191;}
+/*==================find-job-sec================*/
+.compete_job{background:#f5f9fc; padding:60px 0px;}
+.find-job{margin:0px; text-align:center;}
+.heding-first{color:#1b2d48; font-size:30px; font-weight:bold;}
+.find-job h1{margin:0px 0px 45px 0px;}
+.find-job ul{text-align:center; letter-spacing:40px; margin-bottom:20px;}
+.find-job ul li{display:inline-block; vertical-align:top; background:#fff; border-radius:10px; padding:45px 25px; box-shadow:0px 0px 70px #ecf3f8; max-width:350px; width:100%; box-sizing:border-box; letter-spacing:normal;}
+.find-job ul li p{margin:40px 0px; font-size:15px; line-height:28px; color:#6c8190;}
+.view-more{color:#4c35b0; font-size:15px;}
+.view-more:hover, .view-more:hover i{color:#4e20bb;}
+.view-more i{margin-left:8px; color:#4c35b0; font-size:13px; padding-left:0px; -webkit-transition:0.4s padding-left; transition:0.4s padding-left;}
+.find-job ul li:hover i, .featured ul li:hover i{padding-left:4px; -webkit-transition:0.4s padding-left; transition:0.4s padding-left;}
+.svg_icon img{ height:65px; margin:0 auto; margin-right:20px;}
+.svg_icon{font-size:20px; font-weight:bold; color:#333;}
+/*==================events-sec-sec================*/
+.events-sec{padding:60px 0px;}
+.events-sec ul{margin:0px;}
+.events-sec > h1{text-align:center; margin-bottom:60px;} 
+.align-left{text-align:left; margin-top:30px; font-size:22px}
+.events-sec p{font-size:16px; color:#6b8191; line-height:30px; max-width:560px; width:100%; margin:20px 0px;}
+.event-img{float:right; width:500px; padding:24px 30px 0px 0px; position:relative;}
+.event-img:before{position:absolute; left:0px; top:0px; border-top:25px solid #fff; content:""; width:80%; margin-left:20%;}
+.event-img:after{position:absolute; right:0px; top:0px; border-right:30px solid #fff; content:""; height:80%; margin-bottom:20%;}
+.register-now{width:210px; height:60px; border:1px solid #4c35b0; border-radius:30px; font-size:18px; font-weight:600; color:#4c35b0; line-height:60px; text-align:center; display:block; margin:30px 0px;}
+.register-now:hover{background:#4c35b0; color:#fff;}
+/*==================featured-sec================*/
+.featured{padding:0px;}
+.featured h1{margin-bottom:40px; text-align:center;}
+.featured ul{text-align:center; letter-spacing:30px;}
+.featured ul li{letter-spacing:normal; text-align:left; padding-bottom:25px; background:#fff; vertical-align:top; display:inline-block; max-width:258px; width:100%; box-sizing:border-box; border:1px solid #ebebeb;}
+.title-wrap{padding:20px 15px 0px 15px;}
+.title-wrap p{font-size:13px; color:#1b2d48; line-height:20px; margin:20px 0px 30px 0px;}
+.all-event{width:185px; height:48px; border:1px solid #4c35b0; border-radius:30px; font-size:18px; font-weight:600; color:#4c35b0; line-height:48px; text-align:center; display:block; margin:0 auto;}
+.all-event:hover{border-color:#23527c;}
+
+
+
+
+
+.main_container .modal-content{width:660px; margin-top:100px; border-radius:0px; position:relative; box-shadow:none;}
+.model_boxleft{float:left; max-width:275px; width:100%; background:linear-gradient(#552eaf, #d056b0); padding:0px; padding:60px 30px; box-sizing:border-box;}
+.model_boxright{float:right;max-width:380px; width:100%;}
+.model_boxleft h2{color:#fff; font-size:24px; font-weight:700;}
+.model_boxleft p{font-size:14px; color:#fff; font-weight:600; margin-top:10px;}
+.model_boxleft img{margin-top:130px;}
+.close_btn{position:absolute; right:-50px; top:-30px; border-radius:0; background:none; border:0px; color:#ffff; font-size:50px;}
+.mob_menu{display:none;}
+.close_btn:hover{background:none;color: #fff;}
+
+
+
+
+@media screen and (max-width:1200px){
+.heading_con h1{padding-left:70px;}
+.nav ul li a{padding:30px 10px;}
+.tab_form{display:none;}
+.find-job ul li{margin-bottom:30px;}
+.featured ul li{margin-bottom:30px;}
+.testimonial-info ul li{margin:0px 10px;}
+.heading_con{margin-left:0px; left:0px;}
+.brise-input2{max-width:230px;}
+.footer_menu{width:195px;}
+#owl-demo2 .owl-prev, #owl-demo2 .owl-next{display:none;}
+#owl-demo3 .owl-prev, #owl-demo3 .owl-next{display:none;}
+}
+
+@media screen and (max-width:1000px){
+#owl-demo1 .owl-prev, #owl-demo1 .owl-next{display:none;}
+.heading_con{padding-left:30px;}
+#owl-demo2 .owl-prev{left:-25px;}
+#owl-demo2 .owl-next{right:-25px;}
+.form-wrap-bg button{font-size:16px; width:170px;}
+.events-sec p{max-width:inherit;}
+.event-img img{width:100%;}
+}
+
+@media screen and (max-width:992px){
+.heading_con h1 span{font-size:25px;}
+.heading_con{left:0px; margin-left:0px}
+#owl-demo2 .owl-prev{display:none;}
+#owl-demo3 .owl-pagination{display:none;}
+#owl-demo2 .owl-next{display:none;}
+#owl-demo2 .owl-pagination{display:block; margin-top:20px;}
+#owl-demo2.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin:0px 7px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background:red;
+}
+.event-img{float:none; width:100%; margin-bottom:30px;}
+.align-left{padding-top:0px !important;}
+.social_links li{margin-right:2px;}
+.form-wrap-bg button{margin:30px 0px 0px 0px;}
+.brise-input2{float:none; max-width:100%;}
+.footer_menu{width:140px;}
+}
+
+@media screen and (max-width:767px){
+.mob_menu{display:block; position:absolute; left:10px; top:25px; z-index:999;}
+.nav{display:none; position:absolute; left:0px; top:70px; z-index:99; background:#fff; width:300px;}
+.nav ul li{float:none;}
+.nav ul li a{padding:10px 20px;}
+.nav ul li ul{position:inherit; display:block; left:0px; top:0px; padding:0px; width:300px; border:0px;}
+.heading_con{display:none;}
+#owl-demo1 .owl-pagination{display:none;}
+.align-left{font-size:20px;}
+.heding-first, .form-sec h1{font-size:20px;}
+.footer_bg .col-lg-3.col-md-3.col-sm-3.col-xs-3{width:100%; float:none;}
+.footer_bg .col-lg-2.col-md-2.col-sm-2.col-xs-3{width:100%; float:none;}
+.footer_bg .col-lg-2.col-md-3.col-sm-3.col-xs-3{width:100%; float:none;}
+.footer_bg h2{margin:15px 0px; font-size:16px;}
+.footer_menu{width:205px;}
+.footer_bg figure{margin:0 auto;}
+.social_links{margin-bottom:30px;}
+.footer_bg{padding-top:40px;}
+.model_boxleft{width:100%; float:none; max-width:100%; padding:30px;}
+.model_boxleft img{width:120px; margin-top:10px;}
+.model_boxright{width:100%; float:none; max-width:100%;}
+.tab-sec{float:none;}
+.tab-list2{letter-spacing:0px;}
+.main_container .modal-content{width:100%;}
+.tab-data2 p{margin:10px 0px 0px 0px;}
+.tab-data2 p span{margin-left:5px}
+.tab-data2 button{margin:10px auto;}
+.media-list ul li{padding:5px 8px;}
+.login-container a{padding:6px 12px;}
+.tab-list2 li a{padding:0px 10px 10px 10px;}
+#owl-demo2.owl-theme .owl-controls .owl-page span{display:none;}
+#owl-demo2 .owl-pagination{margin-top:0px; display:none;}
+.testimonial-tab li a{padding:18px 15px;}
+.testimonial-tab li{margin:0px;}
+.footer_bg p{text-align:center; margin-top:30px;}
+.social_links{text-align:center;}
+.close_btn{right:0px; top:-53px}
+.login-container a{font-size:13px; border-radius:20px;}
+.logo img{width:100px; margin-left:40px;}
+.media-list ul li img{margin-right:5px;}
+.media-list ul li{margin:5px 5px; font-size:12px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
